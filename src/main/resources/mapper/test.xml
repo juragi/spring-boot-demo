@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.juragi.m.TestMapper">
+
+    <select id="getCurrent" resultType="String">
+        SELECT now()
+    </select>
+    
+    <select id="getBoardList" resultType="HashMap">
+    	SELECT no
+    		 , board_name
+    		 , reg_date
+    	FROM board_info
+    </select>
+
+</mapper>
