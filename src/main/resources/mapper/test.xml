@@ -9,9 +9,11 @@
     
     <select id="getBoardList" resultType="HashMap">
     	SELECT no
-    		 , board_name
+    		 , bd_name
+    		 , w_auth
     		 , reg_date
-    	FROM board_info
+    		 , use_flag
+    	FROM tb_board
     </select>
 
 </mapper>
