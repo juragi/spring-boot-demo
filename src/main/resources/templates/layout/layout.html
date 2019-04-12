@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" 
+	xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout">
+
+<head th:replace="layout/fragment/head :: fragmentHead"></head>
+
+<body>
+  <nav th:replace="layout/fragment/nav :: fragmentNav"></nav>
+  <section class='container'>
+    <div layout:fragment="content"></div>
+  </section>
+  <script type="text/javascript" th:src="@{js/bootstrap.min.js}"></script>
+</body>
+
+</html>

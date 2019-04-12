@@ -23,8 +23,18 @@ public class HomeController {
 		String now = testMapper.getCurrent();
 		log.info("now: {}", now);
 		
-		model.addAttribute("test","dddd");
+		model.addAttribute("test","home");
 		model.addAttribute("now", now);
 		return "index";
+	}
+	
+	@GetMapping("/about")
+	public String about(Model model) {
+		String now = testMapper.getCurrent();
+		log.info("now: {}", now);
+		
+		model.addAttribute("test","about");
+		model.addAttribute("now", now);
+		return "about";
 	}
 }
