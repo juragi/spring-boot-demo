@@ -1,4 +1,4 @@
-package com.juragi.m;
+package com.juragi.mapper;
 import java.util.HashMap;
 import java.util.List;
 
