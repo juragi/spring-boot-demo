@@ -13,3 +13,10 @@ mybatis:
 
 server:
   port: 8080
+  
+logging:
+  pattern:
+    console: '%clr(%d{yy-MM-dd HH:mm:ss}){blue} %clr(%-2p)
+     %clr(-){faint} %clr([%8.15t]){cyan} 
+     %clr(%-40.40logger{0}){blue} 
+     %clr(:){red} %clr(%m){faint}%n'
