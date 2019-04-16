@@ -1,13 +1,12 @@
-
 spring:
   thymeleaf:
     cache: false
   datasource:
-    url: jdbc:mysql://127.0.0.1:3306/juragi
+    url: jdbc:mariadb://127.0.0.1:3306/juragi
     username: juragi
     password: 1111
     driver-class-name: org.mariadb.jdbc.Driver
-    
+
 mybatis:
   mapper-locations: mapper/*.xml
 
@@ -18,5 +17,5 @@ logging:
   pattern:
     console: '%clr(%d{yy-MM-dd HH:mm:ss}){blue} %clr(%-2p)
      %clr(-){faint} %clr([%8.15t]){cyan} 
-     %clr(%-40.40logger{0}){blue} 
+     %clr(%-4logger{0}){blue} 
      %clr(:){red} %clr(%m){faint}%n'
