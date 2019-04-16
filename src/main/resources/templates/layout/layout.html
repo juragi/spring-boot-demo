@@ -7,7 +7,7 @@
 <body>
   <nav th:replace="layout/fragment/nav :: fragmentNav"></nav>
   <section class='container'>
-    <div layout:fragment="content"></div>
+    <div layout:fragment="~{content}"></div>
   </section>
   <script type="text/javascript" th:src="@{js/bootstrap.min.js}"></script>
 </body>
